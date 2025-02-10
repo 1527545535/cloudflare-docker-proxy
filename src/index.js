@@ -17,7 +17,7 @@ const routes = {
   "ecr.xiaojie.chat": "https://public.ecr.aws",
 
   // staging
-  ["docker-staging." + CUSTOM_DOMAIN]: dockerHub,
+  "docker-staging.xiaojie.chat": dockerHub,
 };
 
 function routeByHosts(host) {
@@ -159,5 +159,16 @@ function responseUnauthorized(url) {
   return new Response(JSON.stringify({ message: "UNAUTHORIZED" }), {
     status: 401,
     headers: headers,
+  });
+}
+import DOCS from './help.html'
+ 
+// return docs
+if (url.pathname === "/") {
+  return new Response(DOCS, {
+    status: 200,
+    headers: {
+      "content-type": "text/html"
+    }
   });
 }
