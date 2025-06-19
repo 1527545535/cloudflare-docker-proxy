@@ -16,13 +16,13 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 [env.production]
 name = "cloudflare-docker-proxy"
 routes = [
-   { pattern = "docker.xiaojie.chat", custom_domain = true },
-   { pattern = "quay.xiaojie.chat", custom_domain = true },
-   { pattern = "gcr.xiaojie.chat", custom_domain = true },
-   { pattern = "k8s-gcr.xiaojie.chat", custom_domain = true },
-   { pattern = "k8s.xiaojie.chat", custom_domain = true },
-   { pattern = "ghcr.xiaojie.chat", custom_domain = true },
-   { pattern = "cloudsmith.xiaojie.chat", custom_domain = true },
+   { pattern = "docker.xjie.site", custom_domain = true },
+   { pattern = "quay.xjie.site", custom_domain = true },
+   { pattern = "gcr.xjie.site", custom_domain = true },
+   { pattern = "k8s-gcr.xjie.site", custom_domain = true },
+   { pattern = "k8s.xjie.site", custom_domain = true },
+   { pattern = "ghcr.xjie.site", custom_domain = true },
+   { pattern = "cloudsmith.xjie.site", custom_domain = true },
  ]
 
 [env.production.vars]
@@ -31,7 +31,7 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-route = { pattern = "docker-staging.xiaojie.chat", custom_domain = true }
+route = { pattern = "docker-staging.xjie.site", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
