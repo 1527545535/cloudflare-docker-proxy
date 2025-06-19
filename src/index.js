@@ -9,17 +9,17 @@ const dockerHub = "https://registry-1.docker.io";
 
 const routes = {
   // production
-  "docker.xiaojie.chat": dockerHub,
-  "quay.xiaojie.chat": "https://quay.io",
-  "gcr.xiaojie.chat": "https://gcr.io",
-  "k8s-gcr.xiaojie.chat": "https://k8s.gcr.io",
-  "k8s.xiaojie.chat": "https://registry.k8s.io",
-  "ghcr.xiaojie.chat": "https://ghcr.io",
-  "cloudsmith.xiaojie.chat": "https://docker.cloudsmith.io",
-  "ecr.xiaojie.chat": "https://public.ecr.aws",
+  "docker.xjie.site": dockerHub,
+  "quay.xjie.site": "https://quay.io",
+  "gcr.xjie.site": "https://gcr.io",
+  "k8s-gcr.xjie.site": "https://k8s.gcr.io",
+  "k8s.xjie.site": "https://registry.k8s.io",
+  "ghcr.xjie.site": "https://ghcr.io",
+  "cloudsmith.xjie.site": "https://docker.cloudsmith.io",
+  "ecr.xjie.site": "https://public.ecr.aws",
 
   // staging
-  "docker-staging.xiaojie.chat": dockerHub,
+  "docker-staging.xjie.site": dockerHub,
 };
 
 function routeByHosts(host) {
